@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest http://schemas.android.com/apk/res/android:versionCode="1871" http://schemas.android.com/apk/res/android:versionName="1.87" http://schemas.android.com/apk/res/android:installLocation="preferExternal" http://schemas.android.com/apk/res/android:compileSdkVersion="30" http://schemas.android.com/apk/res/android:compileSdkVersionCodename="11" package="com.neptune.domino" platformBuildVersionCode="30" platformBuildVersionName="11">
+	<uses-sdk http://schemas.android.com/apk/res/android:minSdkVersion="19" http://schemas.android.com/apk/res/android:targetSdkVersion="30" />
+	<uses-feature http://schemas.android.com/apk/res/android:glEsVersion="0x20000" http://schemas.android.com/apk/res/android:required="true" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="android.permission.INTERNET" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="com.android.launcher.permission.READ_SETTINGS" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="com.android.launcher.permission.WAKE_LOCK" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="android.permission.DISABLE_KEYGUARD" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="android.permission.GET_TASKS" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="android.permission.RESTART_PACKAGES" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="android.permission.CHANGE_CONFIGURATION" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="android.permission.RECEIVE_USER_PRESENT" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="com.android.vending.BILLING" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="android.permission.WAKE_LOCK" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+	<supports-screens http://schemas.android.com/apk/res/android:anyDensity="true" http://schemas.android.com/apk/res/android:smallScreens="true" http://schemas.android.com/apk/res/android:normalScreens="true" http://schemas.android.com/apk/res/android:largeScreens="true" http://schemas.android.com/apk/res/android:xlargeScreens="true" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="android.permission.READ_PHONE_STATE" />
+	<uses-feature http://schemas.android.com/apk/res/android:name="android.hardware.touchscreen" http://schemas.android.com/apk/res/android:required="false" />
+	<uses-feature http://schemas.android.com/apk/res/android:name="android.hardware.touchscreen.multitouch" http://schemas.android.com/apk/res/android:required="false" />
+	<uses-feature http://schemas.android.com/apk/res/android:name="android.hardware.touchscreen.multitouch.distinct" http://schemas.android.com/apk/res/android:required="false" />
+	<uses-feature http://schemas.android.com/apk/res/android:name="android.hardware.vulkan.version" http://schemas.android.com/apk/res/android:required="false" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="android.permission.VIBRATE" />
+	<uses-permission http://schemas.android.com/apk/res/android:name="android.permission.FOREGROUND_SERVICE" />
+	<application http://schemas.android.com/apk/res/android:label="Higgs Domino" http://schemas.android.com/apk/res/android:icon="res/drawable/icon.png" http://schemas.android.com/apk/res/android:name="com.x8zs.shell.ProxyApplication" http://schemas.android.com/apk/res/android:hardwareAccelerated="true" http://schemas.android.com/apk/res/android:supportsRtl="true" http://schemas.android.com/apk/res/android:usesCleartextTraffic="true" http://schemas.android.com/apk/res/android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+		<meta-data http://schemas.android.com/apk/res/android:name="x8zs_type" http://schemas.android.com/apk/res/android:value="4" />
+		<meta-data http://schemas.android.com/apk/res/android:name="x8zs_class_name" http://schemas.android.com/apk/res/android:value="androidx.multidex.MultiDexApplication" />
+		<provider http://schemas.android.com/apk/res/android:name="androidx.core.content.FileProvider" http://schemas.android.com/apk/res/android:exported="false" http://schemas.android.com/apk/res/android:authorities="com.neptune.domino.provider" http://schemas.android.com/apk/res/android:grantUriPermissions="true">
+			<meta-data http://schemas.android.com/apk/res/android:name="android.support.FILE_PROVIDER_PATHS" http://schemas.android.com/apk/res/android:resource="res/xml/provider_paths.xml" />
+		</provider>
+		<meta-data http://schemas.android.com/apk/res/android:name="android.app.lib_name" http://schemas.android.com/apk/res/android:value="game" />
+		<activity http://schemas.android.com/apk/res/android:theme="resourceId:0x7f0d0005" http://schemas.android.com/apk/res/android:label="Higgs Domino" http://schemas.android.com/apk/res/android:name="com.pokercity.lobby.lobby" http://schemas.android.com/apk/res/android:exported="true" http://schemas.android.com/apk/res/android:launchMode="singleTop" http://schemas.android.com/apk/res/android:screenOrientation="userLandscape" http://schemas.android.com/apk/res/android:configChanges="0x4a0" http://schemas.android.com/apk/res/android:windowSoftInputMode="0x20" http://schemas.android.com/apk/res/android:resizeableActivity="false">
+			<intent-filter>
+				<action http://schemas.android.com/apk/res/android:name="android.intent.action.MAIN" />
+				<category http://schemas.android.com/apk/res/android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<intent-filter>
+				<action http://schemas.android.com/apk/res/android:name="android.intent.action.VIEW" />
+				<category http://schemas.android.com/apk/res/android:name="android.intent.category.DEFAULT" />
+				<category http://schemas.android.com/apk/res/android:name="android.intent.category.BROWSABLE" />
+				<data http://schemas.android.com/apk/res/android:scheme="neptune_domino" />
+			</intent-filter>
+			<intent-filter>
+				<action http://schemas.android.com/apk/res/android:name="android.intent.action.VIEW" />
+				<category http://schemas.android.com/apk/res/android:name="android.intent.category.BROWSABLE" />
+				<category http://schemas.android.com/apk/res/android:name="android.intent.category.DEFAULT" />
+				<data http://schemas.android.com/apk/res/android:scheme="dmnfriendroom" http://schemas.android.com/apk/res/android:host="enter" />
+			</intent-filter>
+		</activity>
+		<activity http://schemas.android.com/apk/res/android:theme="resourceId:0x7f0d012f" http://schemas.android.com/apk/res/android:label="Higgs Domino" http://schemas.android.com/apk/res/android:name="com.unity3d.UnityAndroidActivity" http://schemas.android.com/apk/res/android:process=":Unity" http://schemas.android.com/apk/res/android:launchMode="singleTask" http://schemas.android.com/apk/res/android:screenOrientation="fullSensor" http://schemas.android.com/apk/res/android:configChanges="0x40003fff" http://schemas.android.com/apk/res/android:hardwareAccelerated="false">
+			<meta-data http://schemas.android.com/apk/res/android:name="unityplayer.UnityActivity" http://schemas.android.com/apk/res/android:value="true" />
+			<meta-data http://schemas.android.com/apk/res/android:name="android.notch_support" http://schemas.android.com/apk/res/android:value="true" />
+		</activity>
+		<receiver http://schemas.android.com/apk/res/android:name="com.appsflyer.SingleInstallBroadcastReceiver" http://schemas.android.com/apk/res/android:exported="true">
+			<intent-filter>
+				<action http://schemas.android.com/apk/res/android:name="com.android.vending.INSTALL_REFERRER" />
+			</intent-filter>
+		</receiver>
+		<meta-data http://schemas.android.com/apk/res/android:name="com.facebook.sdk.ApplicationId" http://schemas.android.com/apk/res/android:value="345000986033587" />
+		<provider http://schemas.android.com/apk/res/android:name="com.facebook.FacebookContentProvider" http://schemas.android.com/apk/res/android:exported="true" http://schemas.android.com/apk/res/android:authorities="com.facebook.app.FacebookContentProvider345000986033587_com.neptune.domino.provider" />
+		<activity http://schemas.android.com/apk/res/android:theme="resourceId:0x7f0d017d" http://schemas.android.com/apk/res/android:label="Higgs Domino" http://schemas.android.com/apk/res/android:name="com.facebook.FacebookActivity" http://schemas.android.com/apk/res/android:configChanges="0x5b0" />
+		<activity http://schemas.android.com/apk/res/android:name="com.facebook.CustomTabActivity" http://schemas.android.com/apk/res/android:exported="true">
+			<intent-filter>
+				<action http://schemas.android.com/apk/res/android:name="android.intent.action.VIEW" />
+				<category http://schemas.android.com/apk/res/android:name="android.intent.category.DEFAULT" />
+				<category http://schemas.android.com/apk/res/android:name="android.intent.category.BROWSABLE" />
+				<data http://schemas.android.com/apk/res/android:scheme="fb345000986033587" />
+			</intent-filter>
+			<intent-filter>
+				<action http://schemas.android.com/apk/res/android:name="android.intent.action.VIEW" />
+				<category http://schemas.android.com/apk/res/android:name="android.intent.category.DEFAULT" />
+				<category http://schemas.android.com/apk/res/android:name="android.intent.category.BROWSABLE" />
+				<data http://schemas.android.com/apk/res/android:scheme="fbconnect" http://schemas.android.com/apk/res/android:host="cct.com.neptune.domino" />
+			</intent-filter>
+		</activity>
+		<activity http://schemas.android.com/apk/res/android:name="com.facebook.CustomTabMainActivity" />
+		<provider http://schemas.android.com/apk/res/android:name="com.facebook.internal.FacebookInitProvider" http://schemas.android.com/apk/res/android:exported="false" http://schemas.android.com/apk/res/android:authorities="com.neptune.domino.FacebookInitProvider" />
+		<receiver http://schemas.android.com/apk/res/android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" http://schemas.android.com/apk/res/android:exported="false">
+			<intent-filter>
+				<action http://schemas.android.com/apk/res/android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+			</intent-filter>
+		</receiver>
+		<meta-data http://schemas.android.com/apk/res/android:name="com.google.android.play.billingclient.version" http://schemas.android.com/apk/res/android:value="3.0.0" />
+		<activity http://schemas.android.com/apk/res/android:theme="@android:style/Theme.Translucent.NoTitleBar" http://schemas.android.com/apk/res/android:name="com.android.billingclient.api.ProxyBillingActivity" http://schemas.android.com/apk/res/android:configChanges="0x5b0" />
+		<activity http://schemas.android.com/apk/res/android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" http://schemas.android.com/apk/res/android:enabled="false" http://schemas.android.com/apk/res/android:exported="false" http://schemas.android.com/apk/res/android:process=":playcore_missing_splits_activity" http://schemas.android.com/apk/res/android:stateNotNeeded="true" http://schemas.android.com/apk/res/android:launchMode="singleInstance" />
+		<activity http://schemas.android.com/apk/res/android:theme="resourceId:0x7f0d0124" http://schemas.android.com/apk/res/android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" http://schemas.android.com/apk/res/android:exported="false" http://schemas.android.com/apk/res/android:stateNotNeeded="true" />
+		<service http://schemas.android.com/apk/res/android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" http://schemas.android.com/apk/res/android:enabled="false" http://schemas.android.com/apk/res/android:exported="true">
+			<meta-data http://schemas.android.com/apk/res/android:name="com.google.android.play.core.assetpacks.versionCode" http://schemas.android.com/apk/res/android:value="11002" />
+		</service>
+		<service http://schemas.android.com/apk/res/android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService" http://schemas.android.com/apk/res/android:enabled="false" http://schemas.android.com/apk/res/android:exported="false" />
+		<activity http://schemas.android.com/apk/res/android:theme="@android:style/Theme.Translucent" http://schemas.android.com/apk/res/android:name="com.google.android.gms.ads.AdActivity" http://schemas.android.com/apk/res/android:exported="false" http://schemas.android.com/apk/res/android:configChanges="0xfb0" />
+		<meta-data http://schemas.android.com/apk/res/android:name="com.google.android.gms.version" http://schemas.android.com/apk/res/android:value="12451000" />
+		<meta-data http://schemas.android.com/apk/res/android:name="com.android.dynamic.apk.fused.modules" http://schemas.android.com/apk/res/android:value="base,unity_PFD_Dynamic" />
+		<meta-data http://schemas.android.com/apk/res/android:name="com.android.stamp.source" http://schemas.android.com/apk/res/android:value="https://play.google.com/store" />
+		<meta-data http://schemas.android.com/apk/res/android:name="com.android.stamp.type" http://schemas.android.com/apk/res/android:value="STAMP_TYPE_STANDALONE_APK" />
+		<meta-data http://schemas.android.com/apk/res/android:name="com.android.vending.splits" http://schemas.android.com/apk/res/android:value="res/xml/splits0.xml" />
+		<meta-data http://schemas.android.com/apk/res/android:name="com.android.vending.derived.apk.id" http://schemas.android.com/apk/res/android:value="2" />
+		<service http://schemas.android.com/apk/res/android:name="com.x8zs.mta.MtaService" http://schemas.android.com/apk/res/android:exported="false" http://schemas.android.com/apk/res/android:process=":x8process">
+			<intent-filter>
+				<action http://schemas.android.com/apk/res/android:name="com.x8zs.mta.MTA_SERVICE" />
+			</intent-filter>
+		</service>
+	</application>
+</manifest>
